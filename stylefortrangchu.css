@@ -1,0 +1,31 @@
+.img{
+    margin:auto;
+    padding:0%;
+    display:block;
+}
+
+.baitap , .baitap:visited{
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 225, 2);
+    width:max-content;
+    position: relative;
+    left: 30px;
+    top:-90px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+p{
+    padding-right:30px;
+    padding-left:30px;
+}
+
+
+
+
+
+
