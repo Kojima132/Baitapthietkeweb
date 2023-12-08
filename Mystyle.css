@@ -25,6 +25,8 @@ li a:hover{
 }
 
 .p{ 
+    position: relative;
+    left:-10px;
     padding:0;
     font-size: 200%;
     text-align: left;
