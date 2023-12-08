@@ -185,13 +185,11 @@ ul.list-person{
 
 .box2{
     margin:auto;
-    display: flex;
-    
+    display: flex;  
     background-color: #FFFFFF;
     width: 1000px;
     height:max-content;
-    border: 1px solid black;
-}
+  }
 
 
 .box3{
