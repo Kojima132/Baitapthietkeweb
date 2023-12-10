@@ -24,23 +24,24 @@ p{
 .li{
     float:left;
 }
-.li .a {
+.li, .a{
     margin:auto;
     padding:0;
     position: relative;
-    display:inline;
+    display:inline-block;
     color:rgb(159, 156, 156);
     text-align:center;
     font-size:12pt;
     padding-right: 22px;
     text-decoration:none;
-    left:210px;
+    transform: translateX(60px);
     font-family:Arial, Helvetica, sans-serif;
     
 }
-.li .a:hover{
+
+.li:hover, .a:hover{
     color:#fffefe;
-    font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 
