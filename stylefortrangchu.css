@@ -18,6 +18,10 @@ p{
     background-color:#000000;
     padding-top: 5px;
     padding-bottom: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
 }
 
 .li{
@@ -109,10 +113,3 @@ h3{
 }
 
 
-.container{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 0px;
-    overflow: hidden;
-}
