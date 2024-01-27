@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleforB2-LAB-7-B7.css">
+    <script type="text/javascript" src="jsforB2-LAB-7-B7.js"></script>
+    <title>Ender Lilies</title>
+</head>
+<body>
+    <header>
+        <audio controls loop>
+            <source src="Harmonious.mp3" type="audio/mp3">
+        </audio>
+        <div style="padding-top: 120px;">
+            <h1 id="h1">2D Action RPG</h1>
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202105/2013/GwSAeFfo5jYUym8ztHvsNDHu.png" id="img1" class="center-wrapper">
+        </div>
+        <p id="p1">Available Now!</p>
+        <div class="div1">
+            <div>
+                <label for="nentang">Nền Tảng:</label>
+                    <select id="nentang" class="custom-option" onchange="nentanggame();">
+                        <option value="Windows">Windows</option>
+                        <option value="Playstation">Playstation</option>
+                        <option value="Nintendo">Nintendo</option>
+                        <option value="Xbox">Xbox</option>
+                    </select>
+            </div>
+            <div>
+                <button id="game" onclick="nentanggame();">Join The Journey With Us</button>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
