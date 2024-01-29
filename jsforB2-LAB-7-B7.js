@@ -1,19 +1,49 @@
-function nentanggame(){
-    var x=document.getElementById("nentang");
-    var y=document.getElementById("game");
-    var z = x.value;
-        if(z=='Windows'){
-            var r ="https://store.steampowered.com/app/1369630/ENDER_LILIES_Quietus_of_the_Knights/";
-            y.setAttribute("onclick", "window.location.href='" + r + "'");
-        }else if(z=='Playstation'){
-            var r ="https://store.playstation.com/ja-jp/concept/10001655/";
-            y.setAttribute("onclick", "window.location.href='" + r + "'");
-        }else if(z=='Nintendo'){
-            var r ="https://www.nintendo.com/games/detail/ender-lilies-quietus-of-the-knights-switch/";
-            y.setAttribute("onclick", "window.location.href='" + r + "'");
-        }else if(z=='Xbox'){
-            var r ="https://www.microsoft.com/en-us/p/ender-lilies-quietus-of-the-knights/9PLGRPRMTQJT?activetab=pivot:overviewtab";
-            y.setAttribute("onclick", "window.location.href='" + r + "'");
-        }
+
+function openTab(tabName) {
+    var tabs = document.getElementsByClassName("tab");
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
     }
+    document.getElementById(tabName).style.display = "block";
+}
+
+window.onload = function() {
+    // Mở slideshow khi trang đã load xong
+    showSlides(slideIndex);
+  };
+
+  //khai báo biến slideIndex đại diện cho slide hiện tại
+  var slideIndex;
+  // KHai bào hàm hiển thị slide
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+ 
+      slides[slideIndex].style.display = "block";  
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0
+      }    
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 6000);
+  }
+  //mặc định hiển thị slide đầu tiên 
+  showSlides(slideIndex = 0);
+ 
+ 
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+
 
